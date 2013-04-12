@@ -1,4 +1,4 @@
-<div class='tagcloud' id="canvas-container">
+<div tal:condition="tags" class='tagcloud' id="canvas-container">
     <canvas id="tags-canvas" />
     <div id="tags">
         <ul>

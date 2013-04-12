@@ -43,4 +43,4 @@ excanvas = Resource(
     renderer=lte_ie_renderer
 )
 
-kotti_tagcloud = Group([css, excanvas, tagcanvas, js, ])
+tagcloud = Group([css, excanvas, tagcanvas, js, ])

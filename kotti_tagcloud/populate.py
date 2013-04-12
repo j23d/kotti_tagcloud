@@ -1,28 +1,17 @@
 import colander
-import deform
 
 from kotti.views.slots import assign_slot
 
+from kotti_settings.config import SlotSchemaNode
+from kotti_settings.config import ShowInContextSchemaNode
 from kotti_settings.util import add_settings
 from kotti_settings.util import get_setting
 from kotti_tagcloud import _
 
 
-choices = (('left', _(u'left')),
-           ('right', _(u'right')),
-           ('abovecontent', _(u'abovecontent')),
-           ('belowcontent', _(u'belowcontent')))
-
-
-class SlotSchemaNode(colander.SchemaNode):
-    name = 'slot'
-    title = _(u'Direction')
-    default = u'left'
-    widget = deform.widget.SelectWidget(values=choices)
-
-
 class TagcloudSchema(colander.MappingSchema):
     slot = SlotSchemaNode(colander.String())
+    show_in_context = ShowInContextSchemaNode(colander.String())
 
 
 TagcloudSettings = {
@@ -30,7 +19,7 @@ TagcloudSettings = {
     'title': _(u'Tagcloud Settings'),
     'description': _(u"Settings for kotti_tagcloud"),
     'success_message': _(u"Successfully saved kotti_tagcloud settings."),
-    'schema_factory': TagcloudSchema
+    'schema_factory': TagcloudSchema,
 }
 
 
