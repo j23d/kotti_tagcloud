@@ -4,6 +4,7 @@ Changelog
 0.1(Unreleased)
 ---------------
 
+- Fixing configuration test. We just need() fanstatic lib now.
 
 
 0.1b1(2013-04-18)

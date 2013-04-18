@@ -15,8 +15,6 @@ def test_kotti_configure():
     kotti_configure(settings)
     assert settings['pyramid.includes'] == \
         ' kotti_tagcloud kotti_tagcloud.widget'
-    assert settings['kotti.fanstatic.view_needed'] == \
-        '        kotti_tagcloud.fanstatic.kotti_tagcloud'
     assert settings['kotti.populators'] == ' kotti_tagcloud.populate.populate'
 
 
