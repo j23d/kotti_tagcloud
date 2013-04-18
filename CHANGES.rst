@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1b1(Unreleased)
+0.1b1(2013-04-18)
 -----------------
 
 - Added settings for the tagcloud.
