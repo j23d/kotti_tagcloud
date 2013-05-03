@@ -1,10 +1,11 @@
 Changelog
 =========
 
-0.1(Unreleased)
----------------
+0.1b2(2013-05-03)
+-----------------
 
 - Fixing configuration test. We just need() fanstatic lib now.
+- Use util method from kotti_settings to determine if the widget should be shown.
 
 
 0.1b1(2013-04-18)
