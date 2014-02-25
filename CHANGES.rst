@@ -4,6 +4,7 @@ Changelog
 0.1(Unreleased)
 ---------------
 
+- Initialize the canvas when the document was loaded.
 
 
 0.1b2(2013-05-03)
